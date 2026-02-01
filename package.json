@@ -1,0 +1,61 @@
+{
+  "name": "gemini-bridge-mcp",
+  "version": "0.0.1",
+  "description": "MCP server bridging Claude, IDEs, and other MCP clients to Gemini CLI with file system and shell access",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "gemini-bridge-mcp": "./dist/index.js",
+    "gemini-bridge-verify": "./dist/verify-setup.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "verify": "tsx src/verify-setup.ts",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "gemini",
+    "gemini-cli",
+    "ai",
+    "claude",
+    "bridge",
+    "automation",
+    "llm",
+    "server",
+    "typescript"
+  ],
+  "author": "Ali <ali.heyderli@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/gemini-bridge-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/gemini-bridge-mcp/issues"
+  },
+  "homepage": "https://github.com/yourusername/gemini-bridge-mcp#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.6",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ]
+}

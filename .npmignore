@@ -1,0 +1,28 @@
+# Build output
+dist/
+*.js
+*.js.map
+*.d.ts
+*.d.ts.map
+
+# Source files are in src/, don't include in package
+src/
+tsconfig.json
+
+# Development
+.DS_Store
+*.log
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+
+# Tests
+coverage/
+*.test.ts
+*.spec.ts
+
+# Misc
+.env
+.env.local
