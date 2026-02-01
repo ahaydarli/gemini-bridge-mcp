@@ -6,8 +6,8 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "gemini-bridge-mcp": "./dist/index.js",
-    "gemini-bridge-verify": "./dist/verify-setup.js"
+    "gemini-bridge-mcp": "dist/index.js",
+    "gemini-bridge-verify": "dist/verify-setup.js"
   },
   "scripts": {
     "build": "tsc",
@@ -35,12 +35,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/gemini-bridge-mcp.git"
+    "url": "git+https://github.com/ahaydarli/gemini-bridge-mcp.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/gemini-bridge-mcp/issues"
+    "url": "https://github.com/ahaydarli/gemini-bridge-mcp/issues"
   },
-  "homepage": "https://github.com/yourusername/gemini-bridge-mcp#readme",
+  "homepage": "https://github.com/ahaydarli/gemini-bridge-mcp#readme",
   "engines": {
     "node": ">=18.0.0"
   },

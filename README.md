@@ -20,7 +20,6 @@ A Model Context Protocol (MCP) server that bridges Claude, VS Code, and other MC
 
 - **Node.js** 18.0.0 or higher
 - **Gemini CLI** installed and configured
-- **Google AI API Key** from [Google AI Studio](https://aistudio.google.com/apikey)
 
 ## Quick Start
 
